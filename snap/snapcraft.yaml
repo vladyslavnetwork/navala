@@ -15,6 +15,7 @@ icon: snap/gui/navala.png
 contact: https://github.com/vladyslavnetwork/navala/issues
 source-code: https://github.com/vladyslavnetwork/navala
 issues: https://github.com/vladyslavnetwork/navala/issues
+website: https://github.com/vladyslavnetwork/navala
 
 base: core26
 confinement: strict
