@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: navala 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-09 03:33+0000\n"
+"POT-Creation-Date: 2026-11-09 09:12+0000\n"
 "PO-Revision-Date: 2026-11-09 12:00+0200\n"
 "Last-Translator: Vladyslav\n"
 "Language-Team: none\n"
@@ -15,99 +15,133 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/navala/__main__.py:38 src/navala/game.py:510
+#: src/navala/__main__.py:38 src/navala/game.py:522
 msgid "NAVALA"
 msgstr "NAVALA"
 
-#: src/navala/game.py:500
+#: src/navala/about.py:58 src/navala/game.py:534
+msgid "About"
+msgstr "Über das Spiel"
+
+#: src/navala/about.py:59
+#, python-brace-format
+msgid "Version {v}"
+msgstr "Version {v}"
+
+#: src/navala/about.py:60
+#, python-brace-format
+msgid "Author: {name}"
+msgstr "Autor: {name}"
+
+#: src/navala/about.py:61
+msgid "License: MIT"
+msgstr "Lizenz: MIT"
+
+#: src/navala/about.py:62
+msgid "Source code, bug reports and updates:"
+msgstr "Quellcode, Fehlerberichte und Updates:"
+
+#: src/navala/about.py:65
+msgid "Opened in your browser."
+msgstr "Im Browser geöffnet."
+
+#: src/navala/about.py:67
+msgid "Could not open the browser. Type the address manually."
+msgstr "Browser konnte nicht geöffnet werden. Adresse bitte manuell eingeben."
+
+#: src/navala/about.py:69
+msgid "ENTER — open in browser    ESC — back"
+msgstr "ENTER — im Browser öffnen    ESC — zurück"
+
+#: src/navala/game.py:512
 msgid "SCORE"
 msgstr "PUNKTE"
 
-#: src/navala/game.py:502 src/navala/game.py:507
+#: src/navala/game.py:514 src/navala/game.py:519
 msgid "HI-SCORE"
 msgstr "REKORD"
 
-#: src/navala/game.py:513
+#: src/navala/game.py:525
 msgid "Defend the Earth from the alien invasion!"
 msgstr "Verteidige die Erde gegen die Alien-Invasion!"
 
-#: src/navala/game.py:515
+#: src/navala/game.py:527
 msgid "On"
 msgstr "An"
 
-#: src/navala/game.py:515
+#: src/navala/game.py:527
 msgid "Off"
 msgstr "Aus"
 
-#: src/navala/game.py:517
+#: src/navala/game.py:529
 msgid "Start game"
 msgstr "Spiel starten"
 
-#: src/navala/game.py:518
+#: src/navala/game.py:530
 #, python-brace-format
 msgid "Language: {name}"
 msgstr "Sprache: {name}"
 
-#: src/navala/game.py:519
+#: src/navala/game.py:531
 #, python-brace-format
 msgid "Sound: {state}"
 msgstr "Ton: {state}"
 
-#: src/navala/game.py:520
+#: src/navala/game.py:532
 #, python-brace-format
 msgid "Fullscreen: {state}"
 msgstr "Vollbild: {state}"
 
-#: src/navala/game.py:522
+#: src/navala/game.py:535
 msgid "Quit"
 msgstr "Beenden"
 
-#: src/navala/game.py:535
+#: src/navala/game.py:548
 msgid "POINTS"
 msgstr "PUNKTE"
 
-#: src/navala/game.py:536
+#: src/navala/game.py:549
 msgid "= ? mystery"
 msgstr "= ? Geheimnis"
 
-#: src/navala/game.py:537
+#: src/navala/game.py:550
 #, python-brace-format
 msgid "= {points} points"
 msgstr "= {points} Punkte"
 
-#: src/navala/game.py:544
+#: src/navala/game.py:557
 msgid "ARROWS move    SPACE fire    P pause    F11 fullscreen"
 msgstr "PFEILE bewegen    LEERTASTE schießen    P Pause    F11 Vollbild"
 
-#: src/navala/game.py:575 src/navala/game.py:579
+#: src/navala/game.py:588 src/navala/game.py:592
 #, python-brace-format
 msgid "LEVEL {n}"
 msgstr "LEVEL {n}"
 
-#: src/navala/game.py:580
+#: src/navala/game.py:593
 msgid "Get ready!"
 msgstr "Mach dich bereit!"
 
-#: src/navala/game.py:582
+#: src/navala/game.py:595
 msgid "Wave cleared!"
 msgstr "Welle abgewehrt!"
 
-#: src/navala/game.py:584
+#: src/navala/game.py:597
 msgid "PAUSED"
 msgstr "PAUSE"
 
-#: src/navala/game.py:585
+#: src/navala/game.py:598
 msgid "P — continue    ESC — main menu"
 msgstr "P — weiter    ESC — Hauptmenü"
 
-#: src/navala/game.py:587
+#: src/navala/game.py:600
 msgid "GAME OVER"
 msgstr "SPIEL VORBEI"
 
-#: src/navala/game.py:589
+#: src/navala/game.py:602
 msgid "NEW HIGH SCORE!"
 msgstr "NEUER REKORD!"
 
-#: src/navala/game.py:591
+#: src/navala/game.py:604
 msgid "Press ENTER to continue"
 msgstr "ENTER drücken, um fortzufahren"

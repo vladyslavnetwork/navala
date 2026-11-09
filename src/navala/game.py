@@ -6,6 +6,7 @@ import random
 import pygame
 
 from . import i18n, sprites
+from .about import About
 from .i18n import _
 
 W, H = 640, 720
@@ -29,7 +30,7 @@ YELLOW = (255, 220, 90)
 RED = (255, 90, 90)
 GROUND = (80, 255, 160)
 
-MENU_ITEMS = ["start", "language", "sound", "fullscreen", "quit"]
+MENU_ITEMS = ["start", "language", "sound", "fullscreen", "about", "quit"]
 LEFT_KEYS = (pygame.K_LEFT, pygame.K_a)
 RIGHT_KEYS = (pygame.K_RIGHT, pygame.K_d)
 FIRE_KEYS = (pygame.K_SPACE, pygame.K_UP, pygame.K_w)
@@ -123,6 +124,7 @@ class Game:
         self.new_record = False
         self.invaded = False
         self.paused_from = "playing"
+        self.about = About()
 
     # ---------- допоміжне ----------
 
@@ -237,6 +239,11 @@ class Game:
 
         if self.state == "menu":
             self.menu_key(key)
+        elif self.state == "about":
+            if key in (pygame.K_RETURN, pygame.K_KP_ENTER):
+                self.about.activate(self.settings["fullscreen"])
+            else:
+                self.set_state("menu")
         elif self.state == "paused":
             if key in (pygame.K_p, pygame.K_PAUSE) or key in CONFIRM_KEYS:
                 self.set_state(self.paused_from, self.state_timer)
@@ -278,6 +285,9 @@ class Game:
             elif key in CONFIRM_KEYS:
                 if item == "start":
                     self.new_game()
+                elif item == "about":
+                    self.about.status = None
+                    self.set_state("about")
                 elif item == "quit":
                     self.settings.save()
                     self.running = False
@@ -286,7 +296,7 @@ class Game:
 
     def update(self, dt):
         self.time += dt
-        if self.state in ("menu", "paused"):
+        if self.state in ("menu", "paused", "about"):
             return
         if self.state == "game_over":
             self.state_timer -= dt
@@ -492,6 +502,8 @@ class Game:
             s.set_at((x, y), (level, level, level + 30))
         if self.state == "menu":
             self.draw_menu()
+        elif self.state == "about":
+            self.about.draw(self, W, H, (WHITE, GREY, YELLOW, RED))
         else:
             self.draw_play()
         pygame.display.flip()
@@ -519,10 +531,11 @@ class Game:
             "sound": _("Sound: {state}").format(state=on if self.audio.enabled else off),
             "fullscreen": _("Fullscreen: {state}").format(
                 state=on if self.settings["fullscreen"] else off),
+            "about": _("About"),
             "quit": _("Quit"),
         }
         for i, item in enumerate(MENU_ITEMS):
-            y = 250 + i * 42
+            y = 240 + i * 38
             selected = i == self.menu_index
             label = labels[item]
             if selected and item in ("language", "sound", "fullscreen"):
