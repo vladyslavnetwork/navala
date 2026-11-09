@@ -1,0 +1,55 @@
+name: navala   # має бути унікальним у Snap Store: `snapcraft register navala`
+title: Navala
+version: '1.0.0'
+summary: Retro arcade shooter — defend the Earth from the alien invasion
+description: |
+  Navala is a classic arcade shooter inspired by the games of the late 1970s.
+  Waves of aliens march down the screen, getting faster with every loss.
+  Hide behind crumbling shelters, shoot down the mystery saucer for bonus
+  points and beat your high score.
+
+  Languages: English, Ukrainian, Polish, German, French, Spanish.
+  Controls: arrow keys to move, Space to fire, P to pause, F11 for fullscreen.
+license: MIT
+icon: snap/gui/navala.png
+contact: https://github.com/vladyslavnetwork/navala/issues
+source-code: https://github.com/vladyslavnetwork/navala
+issues: https://github.com/vladyslavnetwork/navala/issues
+
+base: core26
+confinement: strict
+grade: stable
+
+platforms:
+  amd64:
+  arm64:
+
+apps:
+  navala:
+    command: bin/navala
+    extensions: [gnome]
+    plugs:
+      - audio-playback
+      - opengl
+
+parts:
+  # У core26 немає вбудованого Python, тому кладемо інтерпретатор у пакет.
+  python-runtime:
+    plugin: nil
+    stage-packages:
+      - libpython3.14-minimal
+      - libpython3.14-stdlib
+      - python3-minimal
+      - python3.14-minimal
+      - python3.14-venv
+
+  navala:
+    after: [python-runtime]
+    plugin: python
+    source: .
+    build-packages:
+      - gettext
+    override-build: |
+      # Компілюємо переклади (.po -> .mo) перед встановленням пакета
+      ./tools/compile_translations.sh
+      craftctl default

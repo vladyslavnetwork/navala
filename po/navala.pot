@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the navala package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: navala\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 03:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/navala/__main__.py:38 src/navala/game.py:510
+msgid "NAVALA"
+msgstr ""
+
+#: src/navala/game.py:500
+msgid "SCORE"
+msgstr ""
+
+#: src/navala/game.py:502 src/navala/game.py:507
+msgid "HI-SCORE"
+msgstr ""
+
+#: src/navala/game.py:513
+msgid "Defend the Earth from the alien invasion!"
+msgstr ""
+
+#: src/navala/game.py:515
+msgid "On"
+msgstr ""
+
+#: src/navala/game.py:515
+msgid "Off"
+msgstr ""
+
+#: src/navala/game.py:517
+msgid "Start game"
+msgstr ""
+
+#: src/navala/game.py:518
+#, python-brace-format
+msgid "Language: {name}"
+msgstr ""
+
+#: src/navala/game.py:519
+#, python-brace-format
+msgid "Sound: {state}"
+msgstr ""
+
+#: src/navala/game.py:520
+#, python-brace-format
+msgid "Fullscreen: {state}"
+msgstr ""
+
+#: src/navala/game.py:522
+msgid "Quit"
+msgstr ""
+
+#: src/navala/game.py:535
+msgid "POINTS"
+msgstr ""
+
+#: src/navala/game.py:536
+msgid "= ? mystery"
+msgstr ""
+
+#: src/navala/game.py:537
+#, python-brace-format
+msgid "= {points} points"
+msgstr ""
+
+#: src/navala/game.py:544
+msgid "ARROWS move    SPACE fire    P pause    F11 fullscreen"
+msgstr ""
+
+#: src/navala/game.py:575 src/navala/game.py:579
+#, python-brace-format
+msgid "LEVEL {n}"
+msgstr ""
+
+#: src/navala/game.py:580
+msgid "Get ready!"
+msgstr ""
+
+#: src/navala/game.py:582
+msgid "Wave cleared!"
+msgstr ""
+
+#: src/navala/game.py:584
+msgid "PAUSED"
+msgstr ""
+
+#: src/navala/game.py:585
+msgid "P — continue    ESC — main menu"
+msgstr ""
+
+#: src/navala/game.py:587
+msgid "GAME OVER"
+msgstr ""
+
+#: src/navala/game.py:589
+msgid "NEW HIGH SCORE!"
+msgstr ""
+
+#: src/navala/game.py:591
+msgid "Press ENTER to continue"
+msgstr ""

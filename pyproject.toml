@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "navala"
+version = "1.0.0"
+description = "Retro arcade shooter: defend the Earth from the alien invasion"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["pygame-ce>=2.5.6"]
+
+[project.scripts]
+navala = "navala.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+navala = ["locale/*/LC_MESSAGES/*.mo"]

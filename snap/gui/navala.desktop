@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Navala
+Name[uk]=Навала
+Name[pl]=Nawała
+GenericName=Arcade shooter
+GenericName[uk]=Аркадний шутер
+Comment=Defend the Earth from the alien invasion
+Comment[uk]=Захисти Землю від навали прибульців
+Comment[pl]=Obroń Ziemię przed inwazją obcych
+Comment[de]=Verteidige die Erde gegen die Alien-Invasion
+Comment[fr]=Défendez la Terre contre l'invasion extraterrestre
+Comment[es]=Defiende la Tierra de la invasión alienígena
+Exec=navala
+Icon=${SNAP}/meta/gui/navala.png
+Terminal=false
+Categories=Game;ArcadeGame;
+Keywords=arcade;retro;aliens;space;shooter;game;
+Keywords[uk]=аркада;ретро;прибульці;космос;гра;
+StartupWMClass=navala

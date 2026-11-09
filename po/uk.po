@@ -1,0 +1,114 @@
+# uk translation for Navala.
+# This file is distributed under the same license as the navala package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: navala 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 03:33+0000\n"
+"PO-Revision-Date: 2026-11-09 12:00+0200\n"
+"Last-Translator: Vladyslav\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/navala/__main__.py:38 src/navala/game.py:510
+msgid "NAVALA"
+msgstr "НАВАЛА"
+
+#: src/navala/game.py:500
+msgid "SCORE"
+msgstr "РАХУНОК"
+
+#: src/navala/game.py:502 src/navala/game.py:507
+msgid "HI-SCORE"
+msgstr "РЕКОРД"
+
+#: src/navala/game.py:513
+msgid "Defend the Earth from the alien invasion!"
+msgstr "Захисти Землю від навали прибульців!"
+
+#: src/navala/game.py:515
+msgid "On"
+msgstr "Увімк."
+
+#: src/navala/game.py:515
+msgid "Off"
+msgstr "Вимк."
+
+#: src/navala/game.py:517
+msgid "Start game"
+msgstr "Почати гру"
+
+#: src/navala/game.py:518
+#, python-brace-format
+msgid "Language: {name}"
+msgstr "Мова: {name}"
+
+#: src/navala/game.py:519
+#, python-brace-format
+msgid "Sound: {state}"
+msgstr "Звук: {state}"
+
+#: src/navala/game.py:520
+#, python-brace-format
+msgid "Fullscreen: {state}"
+msgstr "Повний екран: {state}"
+
+#: src/navala/game.py:522
+msgid "Quit"
+msgstr "Вийти"
+
+#: src/navala/game.py:535
+msgid "POINTS"
+msgstr "ОЧКИ"
+
+#: src/navala/game.py:536
+msgid "= ? mystery"
+msgstr "= ? таємниця"
+
+#: src/navala/game.py:537
+#, python-brace-format
+msgid "= {points} points"
+msgstr "= {points} очок"
+
+#: src/navala/game.py:544
+msgid "ARROWS move    SPACE fire    P pause    F11 fullscreen"
+msgstr "СТРІЛКИ рух    ПРОБІЛ постріл    P пауза    F11 повний екран"
+
+#: src/navala/game.py:575 src/navala/game.py:579
+#, python-brace-format
+msgid "LEVEL {n}"
+msgstr "РІВЕНЬ {n}"
+
+#: src/navala/game.py:580
+msgid "Get ready!"
+msgstr "Приготуйся!"
+
+#: src/navala/game.py:582
+msgid "Wave cleared!"
+msgstr "Хвилю відбито!"
+
+#: src/navala/game.py:584
+msgid "PAUSED"
+msgstr "ПАУЗА"
+
+#: src/navala/game.py:585
+msgid "P — continue    ESC — main menu"
+msgstr "P — продовжити    ESC — головне меню"
+
+#: src/navala/game.py:587
+msgid "GAME OVER"
+msgstr "ГРУ ЗАКІНЧЕНО"
+
+#: src/navala/game.py:589
+msgid "NEW HIGH SCORE!"
+msgstr "НОВИЙ РЕКОРД!"
+
+#: src/navala/game.py:591
+msgid "Press ENTER to continue"
+msgstr "Натисни ENTER, щоб продовжити"
