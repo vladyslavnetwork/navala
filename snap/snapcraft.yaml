@@ -49,6 +49,22 @@ parts:
     source: .
     build-packages:
       - gettext
+  navala:
+    after: [python-runtime]
+    plugin: python
+    source: .
+    build-packages:
+      - gettext
+    build-environment:
+      # Розширення gnome підставляє свій PYTHONPATH і PATH із gnome-core26-sdk,
+      # через що venv бере чужий pip і чужий python3. Повертаємо наш Python.
+      - PATH: ${CRAFT_STAGE}/usr/bin:${PATH}
+      - PYTHONPATH: ""
+    override-build: |
+      # Компілюємо переклади (.po -> .mo) перед встановленням пакета
+      ./tools/compile_translations.sh
+      craftctl default
+
     override-build: |
       # Компілюємо переклади (.po -> .mo) перед встановленням пакета
       ./tools/compile_translations.sh
